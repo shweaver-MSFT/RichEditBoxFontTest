@@ -8,7 +8,16 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+    <StackPanel HorizontalAlignment="Center" Margin="48" MinWidth="400">
+        <RichEditBox 
+            Name="MyRichEditBox" 
+            FontFamily="Great Vibes"
+            MinHeight="400"
+            Header="RichEditBox Font test" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Click="SaveButton_Click">Save</Button>
+            <Button Click="OpenButton_Click">Open</Button>
+            <Button Click="ReloadButton_Click">Reload in new view</Button>
+        </StackPanel>
+    </StackPanel>
 </Page>
